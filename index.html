@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="../assets/reset.css" rel="stylesheet">
+		<link href="setup.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+
+
+  <section class="copy"> <div>
+  <a href="intro.html" class="head-tab">Casual Conversation / Matt </a>
+  </div>
+  </section>
+  </head>
+
+
+	<body>
+
+	<button class="collapsible">Q1 — How do you feel about working from home?</button>
+	<div class="content">
+	  <p>I enjoy the flexibility that working from home allows. When I'm able to set my own hours,
+			it helps me stay on task for a specific amount of time. I also love the distraction-free atmosphere that remote work provides.
+			However, I find it very hard to manage my time between work and my personal activities</p>
+	</div>
+	<button class="collapsible">Q2 — How does remote working effect productivity?</button>
+	<div class="content">
+	  <p>Productivity does not have to go down at all. It can be maintained, even enhanced,
+			because commutes and office distractions are gone. Of course, you might be at home
+			with your partner or kids, and those issues will need to be worked out. Another problem
+			might be your ability to resolve problems quickly when you can’t meet in person, in real
+			time. That might create delays. But other than that, I don’t see productivity going down.
+			There’s robust evidence showing that it shouldn’t change.</p>
+	</div>
+	<button class="collapsible">Q3 — Do you have a healthy work and life balance when working from home?</button>
+	<div class="content">
+		<p>Work life balance not going so well for me since i started working from home. I tried to
+			separate work and personal life, but it's been very difficult when your "office" is also your home.</p>
+	</div>
+	<button class="collapsible">Q4 — What challenges you have come across during working remotely, and how did you deal with them?</button>
+	<div class="content">
+		<p>I haven’t worked remotely before the pandemic, and haven’t experienced the unique challenges of remote work. In the beginning stage, I was worried about feeling isolated, but I very quickly adjusted myself to the new working method. </p>
+	</div><button class="collapsible">Q5 — how do you facilitate highly complex or emotionally charged conversations when people aren’t face to face?</button>
+	<div class="content">
+	  <p>You can only raise one or two of these topics because you don’t have the time or opportunity to work things through after the meeting. You can’t just walk to people’s offices to follow up.  So, be very thoughtful about what you bring up and when and how you do it.  But you can still have these conversations. Allowing people to disagree in order to sharpen the team’s thinking is a very positive thing. Sometimes, in virtual environments, people don’t feel psychologically safe, so they might not speak up when they should.  And so you might even want to generate or model a little of disagreement — always over work, tasks or processes, of course, never anything personal.</p>
+	</div>
+	<button class="collapsible">Q6 — Does working from home effect your mental health? and how do you atress?</button>
+	<div class="content">
+	  <p>Since working from home, I notice the changes on my sleping pattern. Sometime is hard to fall asleep due to
+  stress from work, I tried to use CBD before, but i don't think is the best solution for me. So i recently joining
+	meditation classes online, it's been very helpful. Also, whenever I feel stress,  I usually would
+  go for a walk in the park while listening to music.
+  very functional for me .</p>
+
+</div><button class="collapsible">Q7 — What are the things you can do to help with work life balance while WFH?</button>
+	<div class="content">
+	  <p>Set a schedule and stick to it...most of the time. It's very important to have clear guidelines for when to work and when to call it a day, it helps me a lot to maintain a work-life balance.
+
+That said, one of the best benefits of remote work is
+flexibility when the job allows for it. Sometimes you need to extend
+your day or start early to accommodate someone else's time zone. When you do,
+be sure to wrap up earlier than usual or sleep in a bit the next morning to make up for it.</p>
+	</div>
+	<button class="collapsible">Q8 — What suggestion would you give to me people who are new to the remote working environment?</button>
+	<div class="content">
+	  <p>1. Set a schedule and stick to it...most of the time. Having clear guidelines for when to work and when to call it a day helps many remote workers maintain work-life balance.
+			<br>2. Set ground rules with other people in your home or who share your space when you work.
+			<br>3. Schedule breaks, it's important to stand up and move to get your blood circulating every so often, at least once an hour. It also helps to move your eyes off screen regularly, even if it's a micro-break of 10-20 seconds.
+      <br>4. Keep a dedicated office space, Making even small points of differentiation between work time and personal time helps your brain know when you're off the clock, and that contributes to better work-life balance.</p>
+	</div>
+
+
+
+	<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.maxHeight){
+	      content.style.maxHeight = null;
+	    } else {
+	      content.style.maxHeight = content.scrollHeight + "px";
+	    }
+	  });
+	}
+	</script>
+
+	</body>
+	</html>
