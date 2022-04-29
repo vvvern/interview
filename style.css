@@ -9,16 +9,6 @@
     src: url(https://files.cargocollective.com/c791355/MaisonNeue-Book.otf);
 }
 
-section {
-	display:  flex;
-	flex-wrap: wrap;
-}
-
-section:nth-child(1) {
-  gap: 40px 20px; /* Shorthand. */
-  justify-content:  flex-start;
-  align-content: space-between;
-}
 
 
 .numberCircle {
@@ -36,6 +26,7 @@ section:nth-child(1) {
 }
 
 .collapsible {
+  border-radius: 5px;
   background-color: black;
   color: white;
   cursor: pointer;
@@ -44,12 +35,14 @@ section:nth-child(1) {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: MaisonNeue-Mono;
+  text-transform: uppercase;
   margin-bottom: 2px;
 }
 
 .active, .collapsible:hover {
-  color: yellow;
+  color:
   background-color: black;
 }
 
@@ -65,19 +58,29 @@ section:nth-child(1) {
   content: "\2212";
 }
 
+.audio {
+  position: absolute;
+}
+
 .content {
   padding: 0 18px;
-  max-height: 0;
+  max-height: 0px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: white;
 }
 
+.footer {
+  padding-top: 150px;
+
+}
+
+
 .head-tab {
   border-radius: 5px;
   border: 1px solid black;
   padding: 7px;
-  background: white
+  background: white;
   text-align: center;
   position: fixed;
 
